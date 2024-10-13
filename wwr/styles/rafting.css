@@ -34,7 +34,7 @@ a {
 body {
     background-color: var(--background-color);
     max-width: 80%;
-    margin: 0% 10% 1% 10%;
+    margin: 0% 10%;
 }
 
 .logo-container {
@@ -49,7 +49,6 @@ header {
     background-color: var(--header-color);
     display: grid;
     grid-template-columns: 3fr 2fr;
-    margin-bottom: 20px;
 }
 
 .header-links {
@@ -70,8 +69,9 @@ header {
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 }
+
 .hero-container h1{
     text-align: center;
     background-color: #759aab94;
@@ -118,6 +118,50 @@ header {
     padding-bottom: 0.5em;
 }
 
+.adventure-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+}
+
+.adventure-section-title {
+    padding: 2em;
+    font-size: 2em;
+    color: var(--background-color);
+}
+
+.adventure-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-bottom: 3em;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.adventure-images img {
+    width: 15em;
+    padding: 10px;
+}
+
+figcaption {
+    font-family: var(--roboto);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--header-color);
+}
+
+.socialmedia-links {
+    display: flex;
+    justify-content: space-around;
+}
 
 .socialmedia-links img{
     width: 50px;
