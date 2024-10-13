@@ -12,12 +12,6 @@
     margin: 0;
 }
 
-body {
-    background-color: var(--background-color);
-    max-width: 80%;
-    margin: 1% 10%;
-}
-
 h1,
 h2 {
     font-family: var(--fira);
@@ -34,60 +28,94 @@ a {
     text-decoration: none;
     font-family: var(--fira);
     color: var(--text-color);
-}
-
-.hero {
-    position: relative;
-}
-
-.hero-article img {
-    width: 400px;
-    float: right;
-}
-
-.image-hero {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.title-hero{
-    position: absolute;
-    margin-top: 6vw;
-    width: 100%;
-    height: 100px;
-    left: 0;
-    background-color: #759aab80;
-    text-align: center;
-    align-content: center;
-}
-
-.title-hero h1 {
-    color: var(--background-color);
-    font-size: 3em;
-    font-family: var(--fira);
-}
-
-.hero article{
-    position: absolute;
-    background-color: rgba(255, 138, 66, 0.5);
-    margin-top: 25%;
-    margin-left: 2%;
-    margin-right: 2%;
-    height: 270px;
-    padding: 30px;
     color: var(--background-color);
 }
 
-.hero-container {
-    width: 100%;
-    position: absolute;
-    top: 8%;
+body {
+    background-color: var(--background-color);
+    max-width: 80%;
+    margin: 0% 10% 1% 10%;
 }
 
+.logo-container {
+    margin: 20px;
+}
 
 .logo-image {
     width: 180px;
+}
+
+header {
+    background-color: var(--header-color);
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-bottom: 20px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.image-hero {
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vw;
+}
+.hero-container h1{
+    text-align: center;
+    background-color: #759aab94;
+    color: var(--background-color);
+    padding: 1em;
+    font-size: 3em;
+
+}
+
+.hero-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #ff8a4281;
+}
+
+.hero-article img {
+    order: 1;
+    justify-self: center;
+    align-self: center;
+    width: 30vw;
+}
+
+.hero-article p{
+    color: var(--background-color);
+    font-size: large;
+}
+
+.history-section {
+    background-color: var(--header-color);
+    padding: 2em 1.5em;
+    color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-section-title {
+    font-size: 2em;
+    color: var(--background-color);
+    padding-bottom: 0.5em;
 }
 
 
