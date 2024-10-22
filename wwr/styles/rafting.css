@@ -349,7 +349,7 @@ span, label {
     display: flex;
     justify-content: center;
 }
-#submit-button input {
+#submit-button button {
     width: 9rem;
     height: 2.5rem;
     background-color: var(--header-color);
@@ -358,7 +358,7 @@ span, label {
     font-size: 1.1em;
 }
 
-#submit-button input:hover {
+#submit-button button:hover {
     background-color: var(--text-color);
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
