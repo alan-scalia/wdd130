@@ -15,7 +15,8 @@
 h1,
 h2 {
     font-family: var(--fira);
-    font-weight: 100;
+    font-size: 2em;
+    font-weight: 500;
     color: var(--text-color);
 }
 
@@ -46,7 +47,7 @@ body {
 }
 
 header {
-    background-color: var(--header-color);
+    background-color: var(--background-color);
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
@@ -55,7 +56,15 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+}
+
+.header-links a {
+    font-size: 1.4em;
+    color: var(--text-color);
+}
+
+.header-links a:hover {
+    border-bottom: 2px solid var(--text-color);
 }
 
 .image-hero {
@@ -74,8 +83,9 @@ header {
 
 .hero-container h1{
     text-align: center;
-    background-color: #759aab94;
+    background-color: #759aabd3;
     color: var(--background-color);
+    font-weight: 500;
     padding: 1em;
     font-size: 3em;
 
@@ -87,7 +97,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: #ff8a4281;
+    background-color: #ff8a42b7;
 }
 
 .hero-article img {
@@ -97,15 +107,17 @@ header {
     width: 30vw;
 }
 
-.hero-article p{
-    color: var(--background-color);
-    font-size: large;
+.hero-article p{    
+    color: var(--text-color);
+    font-size: 1.4em;
+    font-weight: 500;
 }
 
 .history-section {
     background-color: var(--header-color);
     padding: 2em 1.5em;
-    color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,8 +125,7 @@ header {
 }
 
 .history-section-title {
-    font-size: 2em;
-    color: var(--background-color);
+    color: var(--text-color);
     padding-bottom: 0.5em;
 }
 
@@ -128,14 +139,15 @@ header {
 
 .adventure-section-title {
     padding: 2em;
-    font-size: 2em;
     color: var(--background-color);
 }
 
 .adventure-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding-bottom: 3em;
     text-align: center;
     color: var(--background-color);
