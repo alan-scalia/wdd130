@@ -28,98 +28,95 @@
         </nav>
     </header>
     <main>
-        <form>
-            <div id="contact-container">
-                <h2>Contact Us</h2>
-                <fieldset id="contact-fieldset">
-                    <address id="address">
-                        <p>Dry Oar</p>
-                        123 Fake St<br>
-                        Springfield, IL<br>
-                        USA<br>
-                    </address>
-                    <div id="phone">
-                        <a href="tel:+###">Phone: (222)-321-1234</a><br>
-                        <a href="tel:+###">Fax: (222)-321-1299</a><br>
-                        <a href="mailto:#">Email: dryoar@placeholder.com</a>
-                    </div>
-                    <div class="gmap">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.5444779469767!2d-89.64322372344466!3d39.794776971546376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88753994c6f0ad6f%3A0x79d040cd251a4044!2s1100-1144%20E%20Cook%20St%2C%20Springfield%2C%20IL%2062703%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1729601790780!5m2!1ses!2sar"
-                            width="400" height="250" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </fieldset>
-            </div>
+        <div id="contact-container">
+            <h2>Contact Us</h2>
+            <fieldset id="contact-fieldset">
+                <address id="address">
+                    <p>Dry Oar</p>
+                    123 Fake St<br>
+                    Springfield, IL<br>
+                    USA<br>
+                </address>
+                <div id="phone">
+                    <a href="tel:+1(222)-321-1234">Phone: (222)-321-1234</a><br>
+                    <a href="tel:+1(222)-321-1299">Fax: (222)-321-1299</a><br>
+                    <a href="mailto:#">Email: dryoar@placeholder.com</a>
+                </div>
+                <div class="gmap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.5444779469767!2d-89.64322372344466!3d39.794776971546376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88753994c6f0ad6f%3A0x79d040cd251a4044!2s1100-1144%20E%20Cook%20St%2C%20Springfield%2C%20IL%2062703%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1729601790780!5m2!1ses!2sar"
+                        width="400" height="250" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </fieldset>
+        </div>
 
 
-            <div id="employees-container">
-                <h2>Meet Our Team</h2>
-                <fieldset id="employees-fieldset">
-                    <figure class="employee-card"><img src="images/employee1.jpg" alt="Employee picture 1"></img>
-                        <figcaption>Angela Smith<br>CEO</figcaption>
-                    </figure>
-                    <figure class="employee-card"><img src="images/employee2.jpg" alt="Employee picture 2"></img>
-                        <figcaption>Laura Riley<br>Guide</figcaption>
-                    </figure>
-                    <figure class="employee-card"><img src="images/employee3.jpg" alt="Employee picture 3"></img>
-                        <figcaption>Joshua Williams<br>Guide</figcaption>
-                    </figure>
+        <div id="employees-container">
+            <h2>Meet Our Team</h2>
+            <fieldset id="employees-fieldset">
+                <figure class="employee-card"><img src="images/employee1.jpg" alt="Employee picture 1">
+                    <figcaption>Angela Smith<br>CEO</figcaption>
+                </figure>
+                <figure class="employee-card"><img src="images/employee2.jpg" alt="Employee picture 2">
+                    <figcaption>Laura Riley<br>Guide</figcaption>
+                </figure>
+                <figure class="employee-card"><img src="images/employee3.jpg" alt="Employee picture 3">
+                    <figcaption>Joshua Williams<br>Guide</figcaption>
+                </figure>
 
-                </fieldset>
-            </div>
+            </fieldset>
+        </div>
 
 
-            <div id="message-container">
+        <div id="message-container">
+            <form>
                 <h2>Connect With Us</h2>
                 <fieldset id="message-fieldset">
-                    <form>
-                        <div id="form-container">
-                            <div id="form-first-col">
-                                <label for="username">Name: </label>
-                                <input type="text" id="username" name="username" placeholder="John Doe">
+                    <div id="form-container">
+                        <div id="form-first-col">
+                            <label for="username">Name: </label>
+                            <input type="text" id="username" name="username" placeholder="John Doe">
 
-                                <label for="email">Email Address: </label>
-                                <input type="email" id="email" name="email" placeholder="john.doe@email.com">
+                            <label for="email">Email Address: </label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@email.com">
 
-                                <label for="purpose">What's the purpose of the message?</label>
-                                <div id="purpose-radio-buttons">
-                                    <div class="radio-label">
-                                        <input type="radio" name="reason" value="general" checked>
-                                        <label for="general">General Inquiry</label>
-                                    </div>
-                                    <div class="radio-label">
-                                        <input type="radio" name="reason" value="reservation">
-                                        <label for="reservation">Reservation Question</label>
-                                    </div>
-                                    <div class="radio-label">
-                                        <input type="radio" name="reason" value="suggestion">
-                                        <label for="suggestion">Website Suggestion</label>
-                                    </div>
+                            <span>What's the purpose of the message?</span>
+                            <div id="purpose-radio-buttons">
+                                <div class="radio-label">
+                                    <input type="radio" name="reason" value="general" id="general" checked>
+                                    <label for="general">General Inquiry</label>
                                 </div>
-                            </div>
-
-                            <div id="form-second-col">
-                                <label for="message">Message:</label>
-                                <textarea name="message" id="message"
-                                    placeholder="Type your message here..."></textarea>
-                                <div id="newsletter-checkbox">
-                                    <input type="checkbox" name="newsletter" id="newsletter">
-                                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                                <div class="radio-label">
+                                    <input type="radio" name="reason" value="reservation" id="reservation">
+                                    <label for="reservation">Reservation Question</label>
+                                </div>
+                                <div class="radio-label">
+                                    <input type="radio" name="reason" value="suggestion" id="suggestion">
+                                    <label for="suggestion">Website Suggestion</label>
                                 </div>
                             </div>
                         </div>
-                        <div id="submit-button">
-                            <input type="button" value="Send Message">
+
+                        <div id="form-second-col">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+                            <div id="newsletter-checkbox">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                            </div>
                         </div>
-            </div>
-        </form>
-        </fieldset>
+                    </div>
+                    <div id="submit-button">
+                        <input type="button" value="Send Message">
+                    </div>
+                </fieldset>
+            </form>
         </div>
-        </form>
     </main>
     <footer>
-        <p><a href="https://app.moqups.com/A8AqM3Evy3vKURIzmmLZj9Ppksrx6NEn/view/page/ad64222d5">Wireframe</a>©2024 Dry Oar Rafting - Alan Scalia</p>
+        <p><a href="https://app.moqups.com/A8AqM3Evy3vKURIzmmLZj9Ppksrx6NEn/view/page/ad64222d5">Wireframe</a>©2024 Dry
+            Oar Rafting - Alan Scalia</p>
         <nav class="socialmedia-links">
             <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook"></a>
             <a href="https://www.twitter.com/"><img src="images/twitter.svg" alt="Twitter"></a>
