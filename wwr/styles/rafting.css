@@ -1,3 +1,4 @@
+/* GENERAL LAYOUT STYLING*/
 :root {
     --header-color: #759aab;
     --secondary-color: #ff8c42;
@@ -37,7 +38,27 @@ body {
     max-width: 80%;
     margin: 0% 10%;
 }
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--header-color);
+}
 
+.socialmedia-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialmedia-links img{
+    width: 50px;
+}
+/* ############# */
+
+
+/* HEADER STYLES */
 .logo-container {
     margin: 20px;
 }
@@ -65,8 +86,13 @@ header {
 }
 
 .header-links a:hover {
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
 }
+/* ############# */
+
+
+/* ABOUT US HERO STYLES */
 
 .image-hero {
     position: absolute;
@@ -114,6 +140,11 @@ header {
     font-weight: 500;
 }
 
+/* ############# */
+
+
+/* ABOUT US HISTORY STYLES */
+
 .history-section {
     background-color: var(--header-color);
     padding: 2em 1.5em;
@@ -129,6 +160,10 @@ header {
     color: var(--text-color);
     padding-bottom: 0.5em;
 }
+/* ############# */
+
+
+/* ABOUT US ADVENTURE STYLES */
 
 .adventure-section {
     display: flex;
@@ -162,20 +197,171 @@ header {
 figcaption {
     font-family: var(--roboto);
 }
+/* ############# */
 
-footer {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    align-items: center;
-    padding: 2em;
+/* CONTACT INFO STYLES */
+#contact-container {
     background-color: var(--header-color);
+    text-align: center;
+    padding-top: 1em;
 }
 
-.socialmedia-links {
+#contact-fieldset{
+    border: 0;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1.5em;
+}
+
+#address {
+    text-align: left;
+    color: var(--background-color);
+    border-left: 2px solid var(--background-color);
+    padding-left: 10px;
+}
+
+#phone {
+    text-align: left;
+    border-left: 2px solid var(--background-color);
+    padding-left: 10px;
+}
+#phone a:hover {
+    color: var(--secondary-color);
+}
+
+.gmap iframe {
+    width: 20vw;
+    height: 23vh;
+}
+
+/* ############# */
+
+
+/* CONTACT EMPLOYEES STYLES */
+
+#employees-container{
+    text-align: center;
+    padding-top: 1em;
+}
+
+#employees-fieldset{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem;
+    border: 0;
 }
 
-.socialmedia-links img{
-    width: 50px;
+#employees-fieldset img{
+    width: 15em;
+    padding: 10px;
+    border-bottom: 1px solid#759aab;
 }
+.employee-card {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--text-color);
+    margin: 10px 0px;
+}
+.employee-card figcaption{
+    text-align: center;
+    color: var(--background-color);
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 5px;
+}
+/* ############# */
+
+
+/* CONTACT FORM STYLES */
+#message-container {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+#message-container h2 {
+    color: var(--background-color);
+    text-align: center;
+}
+
+#message-fieldset{
+    border: 0;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+
+#form-container div {
+    font-size: 1.1em;
+}
+
+#form-first-col {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#form-second-col {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+label {
+    padding: 5px;
+}
+
+#purpose-radio-buttons {
+    padding: 10px;
+}
+
+#purpose-radio-buttons div input {
+    width: fit-content;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+}
+
+#message {
+    height: 20vh;
+}
+
+#newsletter-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#submit-button {
+    display: flex;
+    justify-content: center;
+}
+#submit-button input {
+    width: 9rem;
+    height: 2.5rem;
+    background-color: var(--header-color);
+    border: 1px solid var(--background-color);
+    color: var(--background-color);
+    font-size: 1.1em;
+}
+
+#submit-button input:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+/* ############# */
