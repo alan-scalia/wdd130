@@ -21,7 +21,7 @@ h2 {
     color: var(--text-color);
 }
 
-p {
+p, label {
     font-family: var(--roboto);
     font-weight: 400;
 }
