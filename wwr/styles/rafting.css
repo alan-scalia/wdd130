@@ -16,7 +16,7 @@
 h1,
 h2 {
     font-family: var(--fira);
-    font-size: 2em;
+    font-size: 2.8vw;
     font-weight: 500;
     color: var(--text-color);
 }
@@ -24,6 +24,7 @@ h2 {
 p, label, span {
     font-family: var(--roboto);
     font-weight: 400;
+    font-size: 1.3vw;
 }
 
 a {
@@ -38,6 +39,8 @@ body {
     max-width: 80%;
     margin: 0% 10%;
 }
+
+
 /* FOOTER */
 footer {
     display: grid;
@@ -45,6 +48,11 @@ footer {
     align-items: center;
     padding: 2em;
     background-color: var(--header-color);
+}
+
+#wireframe {
+    color: darkred;
+    text-decoration: underline;
 }
 
 .socialmedia-links {
@@ -114,8 +122,6 @@ header {
     color: var(--background-color);
     font-weight: 500;
     padding: 1em;
-    font-size: 3em;
-
 }
 
 .hero-article {
@@ -123,7 +129,7 @@ header {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 1.5vw;
     background-color: #ff8a42b7;
 }
 
@@ -136,7 +142,7 @@ header {
 
 .hero-article p{    
     color: var(--text-color);
-    font-size: 1.4em;
+    font-size: 1.5vw;
     font-weight: 500;
 }
 
@@ -152,8 +158,21 @@ header {
     font-size: 1.4em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+#history-container {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 4vw;
+}
+
+#history-container img{
+    width: 20vw;
+}
+
+#history-container p{
+    width: 20vw;
 }
 
 .history-section-title {
@@ -218,18 +237,20 @@ figcaption {
 
 #address {
     text-align: left;
-    color: var(--background-color);
-    border-left: 2px solid var(--background-color);
+    color: var(--text-color);
+    border-left: 2px solid var(--text-color);
+    font-weight: 600;
     padding-left: 10px;
 }
 
 #phone {
     text-align: left;
-    border-left: 2px solid var(--background-color);
+    border-left: 2px solid var(--text-color);
     padding-left: 10px;
 }
-#phone a:hover {
-    color: var(--secondary-color);
+
+#phone a{
+    color: var(--text-color);
 }
 
 .gmap iframe {
@@ -296,6 +317,10 @@ figcaption {
     border: 0;
 }
 
+legend {
+    display: none;
+}
+
 #form-container {
     display: flex;
     flex-direction: row;
@@ -352,10 +377,11 @@ span, label {
 #submit-button button {
     width: 9rem;
     height: 2.5rem;
-    background-color: var(--header-color);
-    border: 1px solid var(--background-color);
-    color: var(--background-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
     font-size: 1.1em;
+    font-weight: 600;
 }
 
 #submit-button button:hover {
