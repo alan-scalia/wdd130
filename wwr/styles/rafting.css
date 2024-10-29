@@ -14,14 +14,18 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--fira);
     font-size: 2.8vw;
     font-weight: 500;
     color: var(--text-color);
 }
 
-p, label, span {
+p,
+label,
+span,
+li {
     font-family: var(--roboto);
     font-weight: 400;
     font-size: 1.3vw;
@@ -60,9 +64,10 @@ footer {
     justify-content: space-around;
 }
 
-.socialmedia-links img{
+.socialmedia-links img {
     width: 50px;
 }
+
 /* ############# */
 
 
@@ -97,6 +102,7 @@ header {
     border-bottom: 2px solid var(--secondary-color);
     color: var(--secondary-color);
 }
+
 /* ############# */
 
 
@@ -116,10 +122,10 @@ header {
     margin-bottom: 5vw;
 }
 
-.hero-container h1{
+.hero-container h1 {
     text-align: center;
     background-color: #759aabd3;
-    color: var(--background-color);
+    color: var(--text-color);
     font-weight: 500;
     padding: 1em;
 }
@@ -140,7 +146,7 @@ header {
     width: 30vw;
 }
 
-.hero-article p{    
+.hero-article p {
     color: var(--text-color);
     font-size: 1.5vw;
     font-weight: 500;
@@ -172,12 +178,12 @@ header {
     column-gap: 4vw;
 }
 
-#history-container img{
+#history-container img {
     width: 20vw;
     display: inline-block;
 }
 
-#history-container p{
+#history-container p {
     width: 20vw;
 }
 
@@ -185,6 +191,7 @@ header {
     color: var(--text-color);
     padding-bottom: 0.5em;
 }
+
 /* ############# */
 
 
@@ -222,6 +229,7 @@ header {
 figcaption {
     font-family: var(--roboto);
 }
+
 /* ############# */
 
 /* CONTACT INFO STYLES */
@@ -231,7 +239,7 @@ figcaption {
     padding-top: 1em;
 }
 
-#contact-fieldset{
+#contact-fieldset {
     border: 0;
     display: grid;
     grid-auto-flow: column;
@@ -255,7 +263,7 @@ figcaption {
     padding-left: 10px;
 }
 
-#phone a{
+#phone a {
     color: var(--text-color);
 }
 
@@ -269,12 +277,12 @@ figcaption {
 
 /* CONTACT EMPLOYEES STYLES */
 
-#employees-container{
+#employees-container {
     text-align: center;
     padding-top: 1em;
 }
 
-#employees-fieldset{
+#employees-fieldset {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -283,11 +291,12 @@ figcaption {
     border: 0;
 }
 
-#employees-fieldset img{
+#employees-fieldset img {
     width: 15em;
     padding: 10px;
     border-bottom: 1px solid#759aab;
 }
+
 .employee-card {
     display: inline-flex;
     flex-direction: column;
@@ -297,13 +306,15 @@ figcaption {
     background-color: var(--text-color);
     margin: 10px 0px;
 }
-.employee-card figcaption{
+
+.employee-card figcaption {
     text-align: center;
     color: var(--background-color);
     font-weight: 500;
     font-size: 1.3em;
     padding: 5px;
 }
+
 /* ############# */
 
 
@@ -319,7 +330,7 @@ figcaption {
     padding-top: 1em;
 }
 
-#message-fieldset{
+#message-fieldset {
     border: 0;
 }
 
@@ -349,7 +360,8 @@ legend {
     flex-flow: column wrap;
 }
 
-span, label {
+span,
+label {
     padding: 5px;
 }
 
@@ -380,6 +392,7 @@ span, label {
     display: flex;
     justify-content: center;
 }
+
 .submit-button button {
     width: 9rem;
     height: 2.5rem;
@@ -407,7 +420,10 @@ span, label {
     width: 100%;
     margin: 10px 0;
 }
-#index-hero-h2{display: none;}
+
+#index-hero-h2 {
+    display: none;
+}
 
 .galery {
     display: flex;
@@ -436,23 +452,165 @@ span, label {
 
 /* Newsletter */
 
-.index-form{
+.index-form {
     margin: 8vw 0 2vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#newsletter-email{
+#newsletter-email {
     width: 12vw;
     height: 2vw;
     margin: 1vw;
     font-size: 20px;
 }
 
-.newsletter-banner:hover{
+.newsletter-banner:hover {
     border: 3px solid var(--secondary-color);
 }
 
-  /* ############# */
+/* ############# */
 
+/* TRIPS */
+/* LINK */
+.trips-section{
+    background-color: #033860;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trips-section h1{
+    color: var(--background-color);
+    margin-bottom: 20px;
+}
+.arrow {
+    float: left;
+    position: relative;
+    height: 80px;
+    width: 80%;
+    border: solid 1px var(--secondary-color);
+    border-right: none;
+    background: var(--secondary-color) linear-gradient(#ff8c42, #f1843f 37%, #e17839 57%, #f68741);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:after {
+    position: absolute;
+    top: 16px;
+    right: -25px;
+    width: 48px;
+    height: 47px;
+    border-left: solid 1px var(--secondary-color);
+    border-top: solid 0px var(--secondary-color);
+    transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+    background: var(--secondary-color) linear-gradient(45deg, #ff8c42, #f1843f 37%, #e17839 57%, #f68741);
+    content: '';
+}
+
+.arrow a{
+    font-size: 3em;
+    color: #033860;
+}
+
+/* EXPERIENCES LIST */
+
+#experiences-section{
+    text-align: center;
+    padding: 2vw;
+}
+
+#experiences-section h2{
+    margin-bottom: 2vw;
+}
+
+#experiences-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.experience-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "item2 item1";
+    grid-gap: 5px;
+    margin: 20px;
+}
+
+#experience-1 {
+    grid-area: item1;
+}
+
+#experience-2 {
+    grid-area: item2;
+}
+
+.experience-card div{
+    height: 25vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.experience-card h3{
+    font-size: 2vw;
+}
+
+.experience-card img{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 20px solid #f3f3d1;
+}
+
+/* DESTINATIONS */
+
+.destinations-container{
+    background-color: var(--header-color);
+    text-align: center;
+}
+
+.destinations-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.destination-box{
+    background-color: var(--background-color);
+    text-decoration: none;
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 0 10px;
+}
+
+.destination-box img{
+    margin: 20px 0;
+    width: 15vw;
+}
+
+.destination-box h3{
+    font-size: 1.2em;
+    border-bottom: 1px solid var(--header-color);
+    margin: 20px;
+}
+.destination-box ul{
+    margin: 10px 0;
+    padding-inline-start:0;
+}
+.destination-box li{
+    font-size: 1em;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 2vw;
+}
