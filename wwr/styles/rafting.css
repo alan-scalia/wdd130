@@ -575,12 +575,13 @@ label {
 .destinations-container{
     background-color: var(--header-color);
     text-align: center;
+    padding: 20px;
 }
 
 .destinations-box-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .destination-box{
